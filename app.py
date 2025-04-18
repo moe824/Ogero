@@ -95,7 +95,7 @@ if page == "Introduction":
     - Enhance the end-user experience
     """)
 
-    st.image("network.jpg", caption="Sensor-based time series data enables precision forecasting", use_column_width=True)
+    st.image("network.jpg", caption="Sensor-based time series data enables precision forecasting", use_container_width=True)
 
 # ---------------- Page 2: KPI Dashboard ----------------
 elif page == "KPI Dashboard":
