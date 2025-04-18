@@ -116,7 +116,7 @@ elif page == "Forecast Dashboard":
 
     # ---------- Sensor Benchmark Chart ----------
     st.subheader(" Sensor Performance Benchmarking")
-    st.image("sensor_benchmark.jpg", use_column_width=True, caption="Sensor Performance Categorized by Benchmark Scores")
+    st.image("sensor_benchmark.jpg", use_container_width=True, caption="Sensor Performance Categorized by Benchmark Scores")
 
     st.markdown("### Key Insights for Ogero:")
     sensor_insights = [
