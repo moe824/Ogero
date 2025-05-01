@@ -173,6 +173,8 @@ elif page == "Forecast Dashboard":
 
     " **Data-Driven Decision Support**: By integrating this forecast into its network operations center (NOC) dashboards which is a real-time monitoring interface used by telecoms, ISPs, and IT teams, Ogero’s decision-makers gain a forward-looking view of demand fluctuations, transforming reactive bandwidth adjustments into proactive policy and rollout strategies. By embedding this SARIMA forecast into Ogero’s NOC dashboard, weekly bandwidth monitoring transforms from reactive reporting into proactive action."
     ]
+    for insight in insights:
+        st.markdown(insight)
       # ---------- Sensor Benchmark Chart ----------
     st.subheader(" Sensor Performance Benchmarking")
     st.image("sensor_benchmark.jpg", use_container_width=True, caption="Sensor Performance Categorized by Benchmark Scores")
@@ -191,5 +193,4 @@ elif page == "Forecast Dashboard":
 
 
 
-    for insight in insights:
-        st.markdown(insight)
+
