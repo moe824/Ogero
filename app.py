@@ -112,23 +112,7 @@ elif page == "KPI Dashboard":
 # ---------------- Page 3: Forecast Dashboard ----------------
 elif page == "Forecast Dashboard":
     st.title(" Optimized SARIMA Forecast Tool")
-    st.markdown("This page presents the performance benchmarking of sensors followed by the 7-day SARIMA bandwidth forecast.")
-
-    # ---------- Sensor Benchmark Chart ----------
-    st.subheader(" Sensor Performance Benchmarking")
-    st.image("sensor_benchmark.jpg", use_container_width=True, caption="Sensor Performance Categorized by Benchmark Scores")
-
-    st.markdown("### Key Insights for Ogero:")
-    sensor_insights = [
-        "🔴 **Sensor 1 and Sensor 2 underperform**, indicating possible calibration issues or data transmission delays. These sensors should be flagged for maintenance or replacement.",
-        "⚙️ **Sensor 3 and Sensor 6 show average reliability** — they are operational but might benefit from periodic diagnostics to ensure long-term stability.",
-        "🔵 **Sensor 4 and Sensor 5 consistently outperform**, making them ideal candidates for replicating setup standards or locations across similar environments.",
-        "📡 **Benchmarking helps Ogero prioritize troubleshooting efforts**, improve sensor coverage in weak zones, and maintain network data integrity for accurate forecasting."
-    ]
-    for i in sensor_insights:
-        st.markdown(i)
-
-    st.markdown("---")
+    st.markdown("This page presents the 7-day SARIMA bandwidth forecast followed by the performance benchmarking of sensors.")
     st.markdown("Upload new hourly bandwidth data to generate a 7-day forecast.")
 
     uploaded_file = st.file_uploader("Upload raw or cleaned CSV file", type='csv')
@@ -189,6 +173,21 @@ elif page == "Forecast Dashboard":
 
     " **Data-Driven Decision Support**: By integrating this forecast into its network operations center (NOC) dashboards which is a real-time monitoring interface used by telecoms, ISPs, and IT teams, Ogero’s decision-makers gain a forward-looking view of demand fluctuations, transforming reactive bandwidth adjustments into proactive policy and rollout strategies. By embedding this SARIMA forecast into Ogero’s NOC dashboard, weekly bandwidth monitoring transforms from reactive reporting into proactive action."
     ]
+      # ---------- Sensor Benchmark Chart ----------
+    st.subheader(" Sensor Performance Benchmarking")
+    st.image("sensor_benchmark.jpg", use_container_width=True, caption="Sensor Performance Categorized by Benchmark Scores")
+
+    st.markdown("### Key Insights for Ogero:")
+    sensor_insights = [
+        "🔴 **Sensor 1 and Sensor 2 underperform**, indicating possible calibration issues or data transmission delays. These sensors should be flagged for maintenance or replacement.",
+        "⚙️ **Sensor 3 and Sensor 6 show average reliability** — they are operational but might benefit from periodic diagnostics to ensure long-term stability.",
+        "🔵 **Sensor 4 and Sensor 5 consistently outperform**, making them ideal candidates for replicating setup standards or locations across similar environments.",
+        "📡 **Benchmarking helps Ogero prioritize troubleshooting efforts**, improve sensor coverage in weak zones, and maintain network data integrity for accurate forecasting."
+    ]
+    for i in sensor_insights:
+        st.markdown(i)
+
+    st.markdown("---")
 
 
 
