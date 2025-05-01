@@ -163,13 +163,13 @@ elif page == "Forecast Dashboard":
     st.header("💡 Business Insights from SARIMA Forecast")
 
     insights = [
-    " **Proactive Infrastructure Scaling**: With a low RMSE and MAPE, Ogero’s teams can confidently rely on SARIMA forecasts to anticipate usage spikes and proactively scale up local infrastructure—especially in areas where weekday evening demand peaks are common. This means that by December 30th 2024 Ogero coould have predicted bandwidth usage and needs till the 8th of January 2025",
+    " **Proactive Infrastructure Scaling**: With a low RMSE, Ogero’s teams can confidently rely on SARIMA forecasts to anticipate usage spikes and proactively scale up local infrastructure—especially in areas where weekday evening demand peaks are common. This means that by December 30th 2024 Ogero coould have predicted bandwidth usage and needs till the 8th of January 2025",
 
-    " **Maintenance Window Optimization**: The model’s high precision (low MAE) helps identify consistent low-usage periods across the week. This enables Ogero teams to schedule field operations like fiber line testing or DSL cabinet repairs with minimal customer disruption.",
+    " **Maintenance Window Optimization**: The model’s high precision helps identify consistent low-usage periods across the week. This enables Ogero teams to schedule field operations like fiber line testing or DSL cabinet repairs with minimal customer disruption.",
 
     " **Targeted Bandwidth Distribution**: SARIMA’s reliable forecasting allows network planners to redistribute bandwidth capacity efficiently—e.g., by boosting provisioning in areas forecasted to hit saturation thresholds, particularly between 6–10 PM as seen in recent usage trends.",
 
-    " **Cost Efficiency & service level agreement (SLA) Management**: The low AIC score validates that the model achieves high accuracy without overfitting, supporting Ogero in making lean infrastructure investments while confidently meeting SLA commitments on throughput and latency. Ogero can confidently defer or minimize unnecessary infrastructure upgrades (e.g., adding new lines, increasing backhaul capacity) while ensuring compliance with SLA commitments.",
+    " **Cost Efficiency & service level agreement (SLA) Management**: The low RMSE score validates that the model achieves high accuracy without overfitting, supporting Ogero in making lean infrastructure investments while confidently meeting SLA commitments on throughput and latency. Ogero can confidently defer or minimize unnecessary infrastructure upgrades (e.g., adding new lines, increasing backhaul capacity) while ensuring compliance with SLA commitments.",
 
     " **Data-Driven Decision Support**: By integrating this forecast into its network operations center (NOC) dashboards which is a real-time monitoring interface used by telecoms, ISPs, and IT teams, Ogero’s decision-makers gain a forward-looking view of demand fluctuations, transforming reactive bandwidth adjustments into proactive policy and rollout strategies. By embedding this SARIMA forecast into Ogero’s NOC dashboard, weekly bandwidth monitoring transforms from reactive reporting into proactive action."
     ]
